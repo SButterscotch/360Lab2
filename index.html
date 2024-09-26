@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Responsive Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bio.html">Bio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Page Content -->
+  <div class="container mt-5">
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page of Sam's website, made using Bootstrap! It is dynamic and responsive.</p>
+  </div>
+
+  <!-- Photos Section on Home Page -->
+  <div class="container mt-5">
+    <h2>Photos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="images/photo1.jpg" class="img-fluid" alt="Photo 1" data-toggle="modal" data-target="#imageModal1">
+      </div>
+      <div class="col-md-4">
+        <img src="images/photo2.jpg" class="img-fluid" alt="Photo 2" data-toggle="modal" data-target="#imageModal2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/photo3.jpg" class="img-fluid" alt="Photo 3" data-toggle="modal" data-target="#imageModal3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals for each image -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="images/photo1.jpg" class="img-fluid" alt="Photo 1">
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="images/photo2.jpg" class="img-fluid" alt="Photo 2">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imageModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img src="images/photo3.jpg" class="img-fluid" alt="Photo 3">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
